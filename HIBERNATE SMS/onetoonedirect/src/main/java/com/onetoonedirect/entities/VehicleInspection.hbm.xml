@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping
+	package="com.onetoonedirect.entities">
+	<class name="VehicleInspection" table="vehicle_inspection">
+		<id name="inspectionNo" column="inspection_no">
+			<generator class="increment" />
+		</id>
+		<property name="rtaRegistrationNo"
+			column="rta_registration_no" />
+		<property name="chasisNo" column="chasis_no" />
+		<property name="engineNo" column="engine_no" />
+		<property name="modelName" column="model_nm" />
+		<property name="manufacturer" />
+		<property name="vehicleType" column="vehicle_type" />
+		<property name="purchaseDate" column="purchase_dt" />
+	</class>
+</hibernate-mapping>

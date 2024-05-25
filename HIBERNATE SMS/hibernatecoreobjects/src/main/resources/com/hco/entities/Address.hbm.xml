@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.hco.entities">
+	<class name="Address" table="address">
+		<id name="addressNo">
+			<column name="address_no" sql-type="integer" />
+		</id>
+		<property name="addressLine1">
+			<column name="address_line1" sql-type="varchar" length="45"
+				not-null="true" />
+		</property>
+		<property name="addressLine2">
+			<column name="address_line2" sql-type="varchar" length="45"
+				not-null="false" />
+		</property>
+		<property name="city">
+			<column name="city" sql-type="varchar" length="45"
+				not-null="true" />
+		</property>
+		<property name="state" />
+		<property name="zip" />
+		<property name="country" />
+	</class>
+</hibernate-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.htx.entities">
+	<class name="Branch" table="branch">
+		<id name="branchNo" column="branch_no" />
+		<property name="branchName" column="branch_nm" />
+		<property name="ifscCode" column="ifsc_code" />
+		<property name="workingHours" column="working_hours" />
+		<property name="location" />
+		<property name="contactNo" column="contact_no" />
+	</class>
+</hibernate-mapping>

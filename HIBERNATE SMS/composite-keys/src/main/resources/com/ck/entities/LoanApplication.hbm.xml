@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.ck.entities">
+	<class name="LoanApplication" table="loan_application">
+		<!-- <composite-id> <key-property name="applicationNo" column="application_no" 
+			/> <key-property name="branchCode" column="branch_code" /> </composite-id> -->
+		<composite-id name="loanApplicationNo">
+			<key-property name="applicationNo"
+				column="application_no" />
+			<key-property name="branchCode" column="branch_code" />
+		</composite-id>
+		<property name="applicantName" column="applicant_nm" />
+		<property name="appliedDate" column="applied_dt" />
+		<property name="loanType" column="loan_type" />
+		<property name="dob" />
+		<property name="gender" />
+		<property name="loanAmount" column="loan_amount" />
+	</class>
+</hibernate-mapping>

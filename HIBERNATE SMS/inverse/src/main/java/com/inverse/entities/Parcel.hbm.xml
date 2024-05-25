@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.inverse.entities">
+	<class name="Parcel" table="parcel">
+		<id name="parcelNo" column="parcel_no">
+			<generator class="increment" />
+		</id>
+		<property name="description" />
+		<property name="weight" />
+		<property name="deliveryType" column="delivery_type" />
+		<property name="charges" />
+		<many-to-one name="deliveryAssociate"
+			column="delivery_associate_no" cascade="save-update"/>
+	</class>
+</hibernate-mapping>

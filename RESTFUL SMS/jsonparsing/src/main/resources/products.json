@@ -1,0 +1,42 @@
+[
+	{
+		"productNo": "ac3",
+		"productName": "television",
+		"category": "electronics",
+		"features": [
+			"fullhd",
+			"smart"
+		],
+		"price": 39389
+	},
+	{
+		"productNo": "ac24",
+		"productName": "earbuds",
+		"category": "electronics",
+		"features": [
+			"wireless",
+			"noice cancellation"
+		],
+		"price": 9383
+	},
+	{
+		"productNo": "ac233",
+		"productName": "ipod",
+		"category": "electronics",
+		"features": [
+			"100 gb",
+			"30 hrs playtime"
+		],
+		"price": 7267
+	},
+	{
+		"productNo": "ac989",
+		"productName": "table mat",
+		"category": "kitchen tools",
+		"features": [
+			"plastic",
+			"durable"
+		],
+		"price": 93
+	}
+]

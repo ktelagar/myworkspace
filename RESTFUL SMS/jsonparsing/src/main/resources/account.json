@@ -1,0 +1,19 @@
+{
+	"accountNo": "ac03893",
+	"accountHolderName": "Ruby",
+	"accountType": "savings",
+	"ifscCode": "SBI000019",
+	"balance": 9349,
+	"address": {
+		"addressLine1": "83-93/1 Arunodhaya Complex",
+		"addressLine2": "Kormandal road",
+		"city": "Chennai",
+		"state": "TN",
+		"zip": 93838,
+		"country": "India"
+	},
+	"nominees": [
+		"Alex",
+		"Sophi"
+	]
+}

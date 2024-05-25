@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping
+	package="com.manytomanyset.entities">
+	<class name="Team" table="team">
+		<id name="teamNo" column="team_no">
+			<generator class="increment" />
+		</id>
+		<property name="teamName" column="team_nm" />
+		<property name="description" />
+		<property name="coach" />
+		<property name="captain" />
+		<property name="representationCountry"
+			column="representation_country" />
+
+		<set name="players" table="team_players">
+			<key column="team_no" />
+			<many-to-many column="player_no" class="Player" />
+		</set>
+	</class>
+</hibernate-mapping>

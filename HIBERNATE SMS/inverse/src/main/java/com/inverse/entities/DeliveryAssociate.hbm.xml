@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.inverse.entities">
+	<class name="DeliveryAssociate" table="delivery_associate">
+		<id name="deliveryAssociateNo" column="delivery_associate_no">
+			<generator class="increment" />
+		</id>
+		<property name="associateName" column="associate_nm" />
+		<property name="experience" />
+		<property name="designation" />
+		<property name="contactNo" column="contact_no" />
+		<set name="parcels" fetch="join" cascade="delete-orphan">
+			<key column="delivery_associate_no" />
+			<one-to-many class="Parcel" />
+		</set>
+	</class>
+</hibernate-mapping>

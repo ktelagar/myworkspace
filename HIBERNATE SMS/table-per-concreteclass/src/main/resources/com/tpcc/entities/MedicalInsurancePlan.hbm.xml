@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.tpcc.entities">
+	<union-subclass name="MedicalInsurancePlan"
+		table="medical_insurance_plan" extends="InsurancePlan">
+		<property name="networkType" column="network_type" />
+		<property name="copay" />
+	</union-subclass>
+</hibernate-mapping>

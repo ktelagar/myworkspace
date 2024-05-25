@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<entity-mappings
+	xmlns="http://java.sun.com/xml/ns/persistence/orm"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm 
+        http://java.sun.com/xml/ns/persistence/orm_2_0.xsd"
+	version="2.0">
+	<entity class="com.jpamf.entities.Subscriber">
+		<table name="subscriber" />
+		<attributes>
+			<id name="subscriberNo">
+				<column name="subscriber_no" />
+			</id>
+			<basic name="subscriberName">
+				<column name="subscriber_nm" />
+			</basic>
+			<basic name="subscriptionType">
+				<column name="subscription_type" />
+			</basic>
+			<basic name="subscribedDate">
+				<column name="subscribed_dt" />
+			</basic>
+			<basic name="circle" />
+			<basic name="creditLimit">
+				<column name="credit_limit" />
+			</basic>
+			<basic name="dob" />
+			<basic name="gender" />
+			<basic name="mobileNo">
+				<column name="mobile_no" />
+			</basic>
+			<basic name="emailAddress">
+				<column name="email_address" />
+			</basic>
+		</attributes>
+	</entity>
+</entity-mappings>

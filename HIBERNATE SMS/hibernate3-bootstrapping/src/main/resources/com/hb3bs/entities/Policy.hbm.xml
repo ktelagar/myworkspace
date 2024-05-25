@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.hb3bs.entities">
+	<class name="Policy" table="policy">
+		<id name="policyNo" column="policy_no" />
+		<property name="policyHolderName" column="policy_holder_nm" />
+		<property name="planName" column="plan_nm" />
+		<property name="tenure" />
+		<property name="premiumAmount" column="premium_amount" />
+		<property name="insurredAmount" column="insurred_amount" />
+	</class>
+</hibernate-mapping>

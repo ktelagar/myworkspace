@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.hql.entities">
+	<class name="BikeRegistration" table="bike_registration">
+		<id name="bikeNo" column="bike_no">
+			<generator class="increment" />
+		</id>
+		<property name="registrationNo" column="registration_no"
+			unique="true" not-null="true" />
+		<property name="modelName" column="model_nm" />
+		<property name="manufacturer" />
+		<property name="ownerName" column="owner_nm" />
+		<property name="purchaseDate" column="purchase_dt" />
+		<property name="chasisNo" column="chasis_no" />
+		<property name="engineNo" column="engine_no" />
+
+		<set name="trafficChallans">
+			<key column="bike_no" not-null="false" />
+			<one-to-many class="TrafficChallan" />
+		</set>
+
+	</class>
+</hibernate-mapping>

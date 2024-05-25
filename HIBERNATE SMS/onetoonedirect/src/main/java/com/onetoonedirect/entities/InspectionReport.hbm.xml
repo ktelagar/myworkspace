@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping
+	package="com.onetoonedirect.entities">
+	<class name="InspectionReport" table="inspection_report">
+		<id name="inspectionNo" column="inspection_no">
+			<generator class="foreign">
+				<param name="property">vehicleInspection</param>
+			</generator>
+		</id>
+		<property name="reportDate" column="report_dt" />
+		<property name="description" />
+		<property name="agentName" column="agent_nm" />
+		<property name="rating" />
+		<property name="observations" />
+		<property name="valuation" />
+		<property name="reportExpiryDate" column="report_expiry_dt" />
+		<one-to-one name="vehicleInspection" />
+	</class>
+</hibernate-mapping>

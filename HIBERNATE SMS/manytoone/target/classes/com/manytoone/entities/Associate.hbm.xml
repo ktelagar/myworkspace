@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.manytoone.entities">
+	<class name="Associate" table="associate">
+		<id name="associateNo" column="associate_no">
+			<generator class="increment" />
+		</id>
+		<property name="fullname" column="full_nm" />
+		<property name="department" />
+		<property name="designation" />
+		<property name="joinedDate" column="joined_dt" />
+		<property name="emailAddress" column="email_address" />
+		<property name="mobileNo" column="mobile_no" />
+	</class>
+</hibernate-mapping>

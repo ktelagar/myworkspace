@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.tpcc.entities">
+	<class name="InsurancePlan" table="insurance_plan">
+		<id name="insurancePlanNo" column="insurance_plan_no">
+			<generator class="increment" />
+		</id>
+		<property name="planName" column="plan_nm" />
+		<property name="description" />
+		<property name="taxSaver" column="tax_saver" />
+		<property name="minInsurredAmount" column="min_insurred_amt" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.netsafe.entities.Account" table="account">
+		<id name="accountNo" column="account_no" />
+		<property name="accountHolderName" column="account_holder_nm" />
+		<property name="accountType" column="account_type" />
+		<property name="mobileNo" column="mobile_no" />
+		<property name="emailAddress" column="email_address" />
+		<property name="branchCode" column="branch_code" />
+		<property name="balance" column="balance" />
+	</class>
+</hibernate-mapping>

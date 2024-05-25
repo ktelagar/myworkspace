@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.onetomanymap.entities">
+	<class name="CourierCenter" table="courier_center">
+		<id name="courierCenterNo" column="courier_center_no">
+			<generator class="increment" />
+		</id>
+		<property name="centerName" column="center_nm" />
+		<property name="location" />
+		<property name="contactNo" column="contact_no" />
+		<property name="emailAddress" column="email_address" />
+		<property name="inChargeName" column="incharge_nm" />
+		<map name="parcels">
+			<key column="courier_center_no1" not-null="false" />
+			<map-key column="awb_no" type="string" />
+			<one-to-many class="Parcel" />
+		</map>
+	</class>
+</hibernate-mapping>

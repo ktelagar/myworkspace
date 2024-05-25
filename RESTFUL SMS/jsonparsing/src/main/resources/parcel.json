@@ -1,0 +1,11 @@
+{
+	"parcelNo": "p3839",
+	"description": "medicine supplies",
+	"weight": 2,
+	"source": "Hyderabad",
+	"destination": "Chennai",
+	"contents": [
+		"10 sheet tablets",
+		"2 syrups"
+	]
+}

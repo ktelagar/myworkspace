@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.otmoto.entities">
+	<class name="Locker" table="locker">
+		<id name="lockerNo" column="locker_no">
+			<generator class="increment" />
+		</id>
+		<property name="keyNo" column="key_no" />
+		<property name="dimensions" />
+		<property name="charges" />
+		<many-to-one name="account" column="account_no"
+			unique="true" not-null="true" />
+	</class>
+
+</hibernate-mapping>

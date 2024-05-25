@@ -1,0 +1,26 @@
+{
+	"vehicleNo": 29,
+	"rtaRegistrationNo": "TS09BX9383",
+	"chasisNo": "cj393",
+	"engineNo": "e99393",
+	"fuelType": "petrol",
+	"color": "red",
+	"manufacturer": "Honda",
+	"model": "CRV",
+	"capacity": 5,
+	"year": 2023,
+	"features": [
+		"abs",
+		"head-on display",
+		"climatic ac contro",
+		"digital speedometer",
+		"curise control",
+		"hill assistance",
+		"lane dispatching",
+		"air bags",
+		"power tailgate",
+		"moon roof",
+		"vented seats"
+	],
+	"price": 1938884
+}
